@@ -52,26 +52,28 @@ Focus is placed on recall for defaulters (class 0).
 
 #### Threshold Optimization      
 Instead of using default threshold (0.5), different thresholds were tested:      
-Threshold	Default Recall	Accuracy      
-0.3	0.63	0.90      
-0.4	0.71	0.89      
-0.5	0.77	0.87      
-0.6	0.82	0.83      
-0.7	0.90	0.73      
-Final Choice: Threshold = 0.6      
+|Threshold	Default |Recall	|Accuracy   |   
+|-----------|----------|-----------|
+|0.3	|0.63	|0.90  |    
+|0.4	|0.71	|0.89  |   
+|0.5	|0.77	|0.87  |  
+|0.6	|0.82|	0.83 |  
+|0.7	|0.90|	0.73 | 
+
+**Final Choice: Threshold = 0.6**      
 
 - Captures 82% of defaulters      
 - Reduces risky approvals      
 - Maintains acceptable accuracy      
 
-Confusion Matrix (Threshold = 0.6)      
-Correctly identified ~20,000 defaulters      
-Missed ~4,200 defaulters      
-Flagged ~16,000 safe borrowers as risky      
+### Confusion Matrix (Threshold = 0.6)      
+- Correctly identified ~20,000 defaulters      
+- Missed ~4,200 defaulters      
+- Flagged ~16,000 safe borrowers as risky      
 
-Trade-off is acceptable in credit risk context.      
+**Trade-off is acceptable in credit risk context.**      
       
-Feature Importance      
+### Feature Importance      
 
 Top predictors:      
 
